@@ -1,0 +1,11 @@
+language: java
+jdk: oraclejdk8
+
+sudo: required
+
+notifications:
+  email:
+    recipients:
+      - aleksgladun4@gmail.com
+    on_success: never
+    on_failure: always
