@@ -10,9 +10,16 @@ Web Service is deployed on Amazon EC2 instance.
 
 - Swagger API documentation: http://ec2-35-176-241-35.eu-west-2.compute.amazonaws.com:8080/swagger-ui.html#/
 
-- Create Game: http://ec2-35-176-241-35.eu-west-2.compute.amazonaws.com:8080/games
+- Create Game: 
 
-- Make a move: http://ec2-35-176-241-35.eu-west-2.compute.amazonaws.com:8080/games/{gameId}/pits/{pitId}
+```
+curl --header "Content-Type: application/json" --request POST http://ec2-35-176-241-35.eu-west-2.compute.amazonaws.com:8080/games
+```
+
+- Make a move:
+```
+curl --header "Content-Type: application/json" --request PUT http://ec2-35-176-241-35.eu-west-2.compute.amazonaws.com:8080/games/{gameId}/pits/{pitId}
+```
 
 # How to run
 If you want to run project on your local machine type the following command from the root directory:
