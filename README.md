@@ -22,7 +22,7 @@ curl --header "Content-Type: application/json" --request PUT http://ec2-35-176-2
 ```
 
 # How to run
-If you want to run project on your local machine type the following command from the root directory:
+If you want to run project on your local machine set dev profile and type the following command from the root directory:
 
 ```
 mvn clean install
